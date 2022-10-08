@@ -37,18 +37,33 @@ div.backgroundImage{
     width:100%;
     background: url(../images/background.jpg);
     background-size: cover;
-    background-position: 0% 50%;
+    background-position:75% ;
     z-index:-2;
     
 }
 
 
 div.darkOverlay{
-    background-image: linear-gradient(to right , rgba(0,0,0,1),rgba(0,0,0,0));
+    background-image: linear-gradient(to right , rgba(0,0,0,1), rgba(0,0,0,0.7),rgba(0,0,0,0));
     position: relative;
     top: 0;
     left: 0;
     width: 80vw;
     height: 100vh;
     z-index:-1;
+}
+
+    @media screen and(min-width:1200px){
+        .welcome-text,.welcome-text-sub{
+            font-size:40px;
+        }
+    }
+
+.welcome-text-sub{
+    color:rgb(161, 161, 161)
+}
+
+
+.section1 .text-container{
+    left:5vw;
 }
